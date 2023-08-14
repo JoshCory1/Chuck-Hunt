@@ -357,6 +357,54 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1185278349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7587043558790829042, guid: 69c95052329b8f08a86ded5060db6d98, type: 3}
+  m_PrefabInstance: {fileID: 5435054430128261601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1185278350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185278349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed25429dbd55f83bb2b61cd6a6f103b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 5.5
+--- !u!114 &1185278351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185278349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 84854e2d36fb3d868a7dcb570d2e1e74, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1001 &5435054430128261601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -412,7 +460,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7587043558790829042, guid: 69c95052329b8f08a86ded5060db6d98, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1185278351}
+    - targetCorrespondingSourceObject: {fileID: 7587043558790829042, guid: 69c95052329b8f08a86ded5060db6d98, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1185278350}
   m_SourcePrefab: {fileID: 100100000, guid: 69c95052329b8f08a86ded5060db6d98, type: 3}
 --- !u!1001 &6898211682866645450
 PrefabInstance:
