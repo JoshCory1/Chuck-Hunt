@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 250288961863599296}
   - component: {fileID: 1164862785839479230}
   m_Layer: 0
-  m_Name: Chuck
+  m_Name: ChuckLeftFaceing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
