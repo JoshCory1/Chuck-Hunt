@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(menuName = "WaveConfigSO Config", fileName ="New Wave Config")]
+
+[CreateAssetMenu(menuName = "Wave Config", fileName ="New Wave Config")]
 
 public class WaveConfigSO : ScriptableObject
 {
@@ -13,12 +14,12 @@ public class WaveConfigSO : ScriptableObject
     }
     public List<Transform> GetWayPoints()
     {
-        List<Transform> wayPoints = new List<Transform>();
+        List<Transform> waypoints = new List<Transform>();
         foreach(Transform child in pathPrefab)
         {
-            wayPoints.Add(child);
+            waypoints.Add(child);
         }
-        return wayPoints;
+        return waypoints;
     }
     public Transform GetStartingPath()
     {
