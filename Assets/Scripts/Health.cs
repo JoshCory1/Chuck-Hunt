@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] int health = 50;
+    [SerializeField] ParticleSystem explotion;
 
     void OnTriggerEnter2D(Collider2D other) 
     {
@@ -18,6 +19,7 @@ public class Health : MonoBehaviour
     void TakeDamage(int damage)
     {
         health -= damage;
+        Instantiate(explotion, transform.position, Quaternion.identity);
         if(health <= 0)
         {
             Destroy(gameObject);

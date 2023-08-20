@@ -628,6 +628,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4079974701612962002, guid: 69c95052329b8f08a86ded5060db6d98, type: 3}
+      propertyPath: explotion
+      value: 
+      objectReference: {fileID: 3478290790491037897, guid: 6902d3bf4f0f0be018a9514b3ce196fa, type: 3}
     - target: {fileID: 7587043558790829042, guid: 69c95052329b8f08a86ded5060db6d98, type: 3}
       propertyPath: m_Name
       value: DuckDuckBoom
