@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -299,6 +300,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917e61fc3df213dc4aa65afe2c95f290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0.8
+  shakeMagintude: 0.15
+  shakeNow: 0
 --- !u!1001 &532024182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -632,6 +648,10 @@ PrefabInstance:
       propertyPath: explotion
       value: 
       objectReference: {fileID: 3478290790491037897, guid: 6902d3bf4f0f0be018a9514b3ce196fa, type: 3}
+    - target: {fileID: 4079974701612962002, guid: 69c95052329b8f08a86ded5060db6d98, type: 3}
+      propertyPath: applyCameraShake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7587043558790829042, guid: 69c95052329b8f08a86ded5060db6d98, type: 3}
       propertyPath: m_Name
       value: DuckDuckBoom
