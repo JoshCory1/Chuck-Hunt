@@ -8,10 +8,20 @@ public class Health : MonoBehaviour
     [SerializeField] int health = 50;
     [SerializeField] ParticleSystem explotion;
     [SerializeField] bool applyCameraShake;
+    [SerializeField] bool isPlayer;
+    [SerializeField] int score = 50;
     CameraShake camShake;
+    AudioPlayer audioPlayer;
+    ScoreKeeper scoreKeeper;
     void Awake()
     {
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        audioPlayer = FindObjectOfType<AudioPlayer>();
         camShake = Camera.main.GetComponent<CameraShake>();
+    }
+    public int GetHealth()
+    {
+        return health;
     }
 
     void OnTriggerEnter2D(Collider2D other) 
@@ -19,6 +29,7 @@ public class Health : MonoBehaviour
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
         if (damageDealer != null)
         {
+            audioPlayer.GettingHitClip();
             TakeDamage(damageDealer.GetDamage());
             Effect();
             ShakeCamera();
@@ -30,9 +41,19 @@ public class Health : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
+
+    private void Die()
+    {
+        if(!isPlayer)
+        {
+            scoreKeeper.IncraseScore(score);
+        }
+        Destroy(gameObject);
+    }
+
     void Effect()
     {
         if(explotion != null)
@@ -48,4 +69,5 @@ public class Health : MonoBehaviour
             camShake.Play();
         }
     }
+    
 }

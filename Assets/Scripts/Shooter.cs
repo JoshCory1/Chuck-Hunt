@@ -22,8 +22,12 @@ public class Shooter : MonoBehaviour
 
 
     Coroutine fireingCoroutine;
+    AudioPlayer audioPlayer;
 
-    
+    void Awake() 
+    {
+        audioPlayer = FindObjectOfType<AudioPlayer>();
+    }
     void Start()
     {
         AiFiering();
@@ -73,6 +77,14 @@ public class Shooter : MonoBehaviour
                     if(useAI)
                     {
                         fireRate = RandomShotTimer();
+                    }
+                    if(!useAI)
+                    {
+                        audioPlayer.PlayShootingClipPlayer();
+                    }
+                    if(useAI)
+                    {
+                        audioPlayer.PlayShootingClipEnemy();
                     }
             yield return new WaitForSeconds(fireRate);
         }               
