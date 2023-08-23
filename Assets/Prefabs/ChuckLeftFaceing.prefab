@@ -126,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   explotion: {fileID: 3478290790491037897, guid: 6902d3bf4f0f0be018a9514b3ce196fa, type: 3}
+  applyCameraShake: 0
 --- !u!114 &-243783863163202773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +234,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 844151609, guid: e36073d2e915cd11fbf6dd1b286075ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
