@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -4031904682839630477}
   - component: {fileID: -243783863163202773}
   - component: {fileID: 2659175019737110030}
+  - component: {fileID: 3431876858689011754}
   m_Layer: 9
   m_Name: ChuckLeftFaceing
   m_TagString: Untagged
@@ -127,6 +128,8 @@ MonoBehaviour:
   health: 50
   explotion: {fileID: 3478290790491037897, guid: 6902d3bf4f0f0be018a9514b3ce196fa, type: 3}
   applyCameraShake: 0
+  isPlayer: 0
+  score: 50
 --- !u!114 &-243783863163202773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +164,41 @@ MonoBehaviour:
   shotTimeVeriance: 0.9
   minimumShotTime: 0.2
   isFiering: 0
+--- !u!58 &3431876858689011754
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534909167298213598}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03, y: 0.64}
+  serializedVersion: 2
+  m_Radius: 0.05
 --- !u!1 &2865041547972648196
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] float shotTimeVeriance = 0.5f;
     [SerializeField] float minimumShotTime = 0.2f;
     [HideInInspector] public bool isFiering;
+    
 
 
     Coroutine fireingCoroutine;
