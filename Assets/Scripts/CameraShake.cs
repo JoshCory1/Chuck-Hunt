@@ -7,11 +7,12 @@ public class CameraShake : MonoBehaviour
 {
     [SerializeField] float shakeDuration = 1f;
     [SerializeField] float shakeMagintude = 1f;
-    public bool shakeNow = false;
     Vector3 initialPosition;
     // Start is called before the first frame update
     void Start()
     {
+        Screen.SetResolution(1920, 1080, true);
+        Debug.Log(Screen.currentResolution);
         initialPosition = transform.position;
     }
 

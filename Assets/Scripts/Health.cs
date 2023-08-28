@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class Health : MonoBehaviour
-{
+{   
     [SerializeField] int health = 50;
     [SerializeField] ParticleSystem explotion;
     [SerializeField] bool applyCameraShake;
@@ -13,16 +14,19 @@ public class Health : MonoBehaviour
     CameraShake camShake;
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
+    LevelManager levelManager;
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         audioPlayer = FindObjectOfType<AudioPlayer>();
         camShake = Camera.main.GetComponent<CameraShake>();
+        levelManager = FindObjectOfType<LevelManager>();
     }
     public int GetHealth()
     {
         return health;
     }
+    
 
     void OnTriggerEnter2D(Collider2D other) 
     {
@@ -51,7 +55,12 @@ public class Health : MonoBehaviour
         {
             scoreKeeper.IncraseScore(score);
         }
+        else
+        {
+            levelManager.LodeGameOver();
+        }
         Destroy(gameObject);
+        
     }
 
     void Effect()

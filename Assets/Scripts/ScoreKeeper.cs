@@ -5,6 +5,21 @@ using UnityEngine;
 public class ScoreKeeper : MonoBehaviour
 {
     [SerializeField] int currentScore;
+    static ScoreKeeper instance;
+
+    void Awake()
+    {
+        if(instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
 
     public int GetCurrentScore()
     {

@@ -15,9 +15,11 @@ public class Player : MonoBehaviour
     [SerializeField] float paddingTop;
     [SerializeField] float paddingBottom;
     Shooter shooter;
+    LevelManager levelManager;
 
     private void Awake() 
     {
+        levelManager = FindObjectOfType<LevelManager>();
         shooter = GetComponent<Shooter>();    
     }
     void Start() 
@@ -57,4 +59,9 @@ public class Player : MonoBehaviour
             shooter.isFiering = value.isPressed;
         }
     }
+     void OnQuit()
+     {
+        levelManager.LodeGameOver();
+     }
+
 }

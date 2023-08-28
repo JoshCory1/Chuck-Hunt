@@ -20,6 +20,7 @@ public class UIDisplay : MonoBehaviour
     }
     void Start()
     {
+        Screen.SetResolution(1920, 1080, true);
         healthSlider.maxValue = playerHealth.GetHealth();
         healthSlider.minValue = 0;
     }

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 79f230f4ddcfaa743a7b46f10b3ed476
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Radium FG
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 95704613cb95831279f2fdb1fbf17831, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
