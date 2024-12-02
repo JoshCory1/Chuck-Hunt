@@ -18,6 +18,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] float timeBetweenShots = 1f;
     [SerializeField] float shotTimeVeriance = 0.5f;
     [SerializeField] float minimumShotTime = 0.2f;
+    [SerializeField] GameObject builetExit;
     [HideInInspector] public bool isFiering;
     
 
@@ -67,7 +68,7 @@ public class Shooter : MonoBehaviour
         {
 
             GameObject instance = Instantiate(projectilePrefab,
-                                transform.position,
+                                builetExit.transform.position,
                                 Quaternion.identity);
                     Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
                     if(rb != null)

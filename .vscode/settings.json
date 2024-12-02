@@ -52,5 +52,6 @@
         "temp/":true,
         "Temp/":true
     },
-    "dotnet.defaultSolution": "Chuck Hunt.sln"
+    "dotnet.defaultSolution": "Chuck Hunt.sln",
+    "dotnet.preferCSharpExtension": true
 }
