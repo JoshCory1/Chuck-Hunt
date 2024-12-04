@@ -1,0 +1,12 @@
+CyberRealistic
+
+Objects below drawn by Developer but modified with CyberRealistic
+
+	ALL Images
+
+
+Licenses:
+	https://huggingface.co/spaces/CompVis/stable-diffusion-license
+
+Website:
+	https://civitai.com/models/15003?modelVersionId=89680
