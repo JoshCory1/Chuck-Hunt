@@ -7,6 +7,7 @@ Objects below drawn by Developer but modified with CyberRealistic
 
 Licenses:
 	https://huggingface.co/spaces/CompVis/stable-diffusion-license
+	https://github.com/JoshCory1/Chuck-Hunt/tree/master/Attribution/Licenses
 
 Website:
 	https://civitai.com/models/15003?modelVersionId=89680

@@ -591,6 +591,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2338213273621284709, guid: 70219855072861f96ac956f1d2a6c9d7, type: 3}
+      propertyPath: hitVolume
+      value: 0.271
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338213273621284709, guid: 70219855072861f96ac956f1d2a6c9d7, type: 3}
+      propertyPath: gettingHitClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b6c99114ceb054419b880de76ee6143, type: 3}
+    - target: {fileID: 2338213273621284709, guid: 70219855072861f96ac956f1d2a6c9d7, type: 3}
+      propertyPath: shootingClipEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 66da2f3cd9df8fb4bb1e33cc59519870, type: 3}
+    - target: {fileID: 2338213273621284709, guid: 70219855072861f96ac956f1d2a6c9d7, type: 3}
+      propertyPath: shootingClipPlayer
+      value: 
+      objectReference: {fileID: 8300000, guid: 86eda4cbc5dac9c4793fbba5e7c770a3, type: 3}
+    - target: {fileID: 2338213273621284709, guid: 70219855072861f96ac956f1d2a6c9d7, type: 3}
+      propertyPath: shootingVolumeEnemy
+      value: 0.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338213273621284709, guid: 70219855072861f96ac956f1d2a6c9d7, type: 3}
+      propertyPath: shootingVolumePlayer
+      value: 0.266
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805633987468857198, guid: 70219855072861f96ac956f1d2a6c9d7, type: 3}
+      propertyPath: m_Volume
+      value: 0.718
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805633987468857198, guid: 70219855072861f96ac956f1d2a6c9d7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dc1e3fca7e5025c489f28d6d40e4615a, type: 3}
     - target: {fileID: 7822733571356511069, guid: 70219855072861f96ac956f1d2a6c9d7, type: 3}
       propertyPath: m_Name
       value: AudioPlayer
@@ -867,7 +899,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.2
+  m_fontSize: 44.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
