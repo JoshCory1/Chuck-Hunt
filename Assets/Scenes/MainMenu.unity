@@ -869,10 +869,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ever wonder what would happen if a hunter (Chuck) got his hands on a alien
-    copter pack and evil \nclone machine. Well thankfully Duck-Duck Boom (formerly
-    just duck Chucks...umm hunting buddy)\nis ready. Grabbing Chucks shot gun he
-    is ready to save the world."
+  m_text: "Ever wonder what would happen if a hunter (Chuck) got his hands on an
+    alien copter pack and evil \nclone machine. Well thankfully Duck-Duck Boom (formerly
+    just duck Chucks...umm hunting buddy)\nis ready. Grabbing Chucks shotgun he is
+    ready to save the world."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c592042c1a1d0526a568f1d99ba7997, type: 2}
   m_sharedMaterial: {fileID: -930358280543218853, guid: 2c592042c1a1d0526a568f1d99ba7997, type: 2}
@@ -967,7 +967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1718495765
 RectTransform:
   m_ObjectHideFlags: 0
