@@ -877,6 +877,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 78044094ca7aec17e86f5ef0c422254f, type: 2}
   timeBetweenWaves: 0.5
   gameRunning: 1
+  timeRemaining: 30
+  timeAmountToTake: 0.1
 --- !u!4 &1711742904
 Transform:
   m_ObjectHideFlags: 0

@@ -8,11 +8,32 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] List<WaveConfigSO> waveConfigs;
     [SerializeField] float timeBetweenWaves = 0f;
     [SerializeField] bool gameRunning = true;
+    [SerializeField] float timeRemaining = 30f;
+    [SerializeField] float timeAmountToTake = 0.1f;
     WaveConfigSO currentWave;
+    float startTimeRemaining = 0.0f;
 
     void Start()
     {
         StartCoroutine(SpawnEnemyWaves());
+        startTimeRemaining = timeRemaining;
+    }
+
+    private void Update() 
+    {
+        if(timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+        else
+        {
+            Debug.Log("time up");
+            foreach(WaveConfigSO wave in waveConfigs)
+            {
+                wave.SetTimeBetweenEnemySpawns(timeAmountToTake);
+            }
+            timeRemaining = startTimeRemaining;
+        }
     }
 
     public WaveConfigSO GetCurrentWave()

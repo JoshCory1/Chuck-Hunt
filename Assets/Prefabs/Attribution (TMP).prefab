@@ -65,11 +65,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Made with Unity, CyberRealistic and assets purchased from Ovani.
+  m_text: 'Sprites modified with CyberRealistic and soundfx assets purchased from
+    Ovani.
 
-    Please
-    see https://github.com/JoshCory1/Chuck-Hunt/tree/master/Attribution for more
-    details'
+    Please see https://github.com/JoshCory1/Chuck-Hunt/tree/master/Attribution
+    for more details'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
