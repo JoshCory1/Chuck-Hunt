@@ -619,8 +619,16 @@ PrefabInstance:
       value: Attribution (TMP)
       objectReference: {fileID: 0}
     - target: {fileID: 3451122653082364554, guid: ebbd39de39296f9428a1272bdde66f6d, type: 3}
+      propertyPath: m_text
+      value: 'Sprites modified with CyberRealistic, fount Evil Empire and soundfx
+        assets purchased from Ovani.
+
+        Please see https://github.com/JoshCory1/Chuck-Hunt/tree/master/Attribution
+        for more details'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451122653082364554, guid: ebbd39de39296f9428a1272bdde66f6d, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3451122653082364554, guid: ebbd39de39296f9428a1272bdde66f6d, type: 3}
       propertyPath: m_margin.x
@@ -636,7 +644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3451122653082364554, guid: ebbd39de39296f9428a1272bdde66f6d, type: 3}
       propertyPath: m_fontSizeBase
-      value: 18
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8025036643806394221, guid: ebbd39de39296f9428a1272bdde66f6d, type: 3}
       propertyPath: m_Pivot.x

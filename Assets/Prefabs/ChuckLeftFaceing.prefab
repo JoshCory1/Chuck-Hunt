@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6521c2757e55dcdfa87cec35a15c6d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 25
   explotion: {fileID: 3478290790491037897, guid: 6902d3bf4f0f0be018a9514b3ce196fa, type: 3}
   applyCameraShake: 0
   isPlayer: 0

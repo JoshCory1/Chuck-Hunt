@@ -1,22 +1,23 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioPlayer : MonoBehaviour
 {
     [Header("Shooting Player")]
     [SerializeField] AudioClip shootingClipPlayer;
-    [SerializeField] [Range(0f, 1f)] float shootingVolumePlayer = 1f;
-
+    
     [Header ("Shooting Enemy")]
     [SerializeField] AudioClip shootingClipEnemy;
-    [SerializeField] [Range(0f, 1f)] float shootingVolumeEnemy = 1f;
 
     [Header("Getting Hit")] 
     [SerializeField] AudioClip gettingHitClip;
-    [SerializeField] [Range(0f, 1f)] float hitVolume = 1f;
-
+    
+    [Header("Volume SoundFX")]
+    [SerializeField] [Range(0.0001f, 1.0f)] float soundFXVolume = 0.255f;
     static AudioPlayer instance;
 
     public AudioPlayer GetInstance()
@@ -40,6 +41,12 @@ public class AudioPlayer : MonoBehaviour
         }
     }
 
+
+    public void SetVolume(float x)
+    {
+        soundFXVolume = x;
+    }
+    
     private void ManageSingleton()
     {
         throw new NotImplementedException();
@@ -47,16 +54,16 @@ public class AudioPlayer : MonoBehaviour
 
     public void PlayShootingClipPlayer()
     {
-        PlayClip(shootingClipPlayer, shootingVolumePlayer);
+        PlayClip(shootingClipPlayer, soundFXVolume);
     }
 
     public void PlayShootingClipEnemy()
     {
-        PlayClip(shootingClipEnemy, shootingVolumeEnemy);
+        PlayClip(shootingClipEnemy, soundFXVolume);
     }
     public void GettingHitClip()
     {
-        PlayClip(gettingHitClip, hitVolume);
+        PlayClip(gettingHitClip, soundFXVolume);
     }
 
     void PlayClip(AudioClip clip, float volume)

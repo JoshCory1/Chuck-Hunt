@@ -16,17 +16,22 @@ public class LevelManager : MonoBehaviour
     public void LodeGame()
     {
         scoreKeeper.ResetScore();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
      public void LodeMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
      public void LodeGameOver()
     {
-        StartCoroutine(WaitAndLoad(2, delayLoadLevel));
+        StartCoroutine(WaitAndLoad(3, delayLoadLevel));
+    }
+
+    public void LoadSettings()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
@@ -41,4 +46,6 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(index);
     }
+
+
 }

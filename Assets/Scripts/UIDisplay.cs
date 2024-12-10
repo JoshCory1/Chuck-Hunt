@@ -11,8 +11,10 @@ public class UIDisplay : MonoBehaviour
     [SerializeField] TextMeshProUGUI tmpScore;
     [SerializeField] Slider healthSlider;
     [SerializeField] Health playerHealth;
-    ScoreKeeper scoreKeeper;
+    [SerializeField] TextMeshProUGUI waveText;
 
+    ScoreKeeper scoreKeeper;
+    
     
     void Awake()
     {
@@ -30,6 +32,19 @@ public class UIDisplay : MonoBehaviour
     {
         ScoreTracking();
         healthSlider.value = playerHealth.GetHealth();
+    }
+
+    public void SetWaveText(string x, bool y)
+    {
+        if(y == true)
+        {
+            waveText.enabled = true;
+        }
+        waveText.text = x;
+        if(y == false)
+        {
+            waveText.enabled = false;
+        }
     }
 
     private void ScoreTracking()

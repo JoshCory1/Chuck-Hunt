@@ -1,0 +1,9 @@
+Evil Empire
+Text Fount Evil Empire was used as an asset in thins game
+
+Licenses:
+	https://www.dafont.com/evil-empire.font
+	https://github.com/JoshCory1/Chuck-Hunt/tree/master/Attribution/Licenses
+
+Website:
+	https://wanders.work
