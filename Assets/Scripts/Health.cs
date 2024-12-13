@@ -15,6 +15,7 @@ public class Health : MonoBehaviour
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
     LevelManager levelManager;
+    EnemySpawner enemySpawner;
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
@@ -22,6 +23,7 @@ public class Health : MonoBehaviour
         camShake = Camera.main.GetComponent<CameraShake>();
         levelManager = FindObjectOfType<LevelManager>();
     }
+    
     public int GetHealth()
     {
         return health;
@@ -40,6 +42,7 @@ public class Health : MonoBehaviour
             damageDealer.Hit();
         }
     }
+    
     void TakeDamage(int damage)
     {
         health -= damage;

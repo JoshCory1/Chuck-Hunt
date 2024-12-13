@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
 {
+    
     EnemySpawner enemySpawnr;
     WaveConfigSO waveConfig;
     List<Transform> waypoints;
     int waypointIndex = 0;
+    
     void Awake() 
     {
         enemySpawnr = FindObjectOfType<EnemySpawner>();    
@@ -24,10 +26,13 @@ public class Pathfinder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Falowpath();
+        FollowPath();
     }
 
-    private void Falowpath()
+     
+
+
+    private void FollowPath()
     {
         if(waypointIndex < waypoints.Count)
         {

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,16 +6,24 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    [Header("wave configuration")]
+    [Tooltip("reference to all enemy spawn points")]
     [SerializeField] List<WaveConfigSO> waveConfigs;
-    [SerializeField] float timeBetweenWaves = 0f;
+    [Tooltip("time between enemy spawns base line")]
+    [SerializeField] float timeBetweenWaves = 0.5f;
+    [Tooltip("bool that defines if game is running")]
     [SerializeField] bool gameRunning = true;
-    [Header("Wave Progression")]
+    [Header("wave Progression")]
+    [Tooltip("time before timer is triggered")]
     [SerializeField] float timeRemaining = 60f;
+    [Tooltip("time that is taken off the time before net enemy spawn")]
     [SerializeField] float timeAmountToTake = 0.3f;
-    float waveUITimer = 1.5f;
-    WaveConfigSO currentWave;
+    [Tooltip("reference for the ui canvas")]
     [SerializeField] UIDisplay uIDisplay;
 
+    float waveUITimer = 1.5f;
+    WaveConfigSO currentWave;
+    Pathfinder pathfinder;
     int waveCount = 1;
     float startTimeRemaining = 0.0f;
 
@@ -24,7 +33,6 @@ public class EnemySpawner : MonoBehaviour
         startTimeRemaining = timeRemaining;
         uIDisplay.SetWaveText("Wave " + waveCount, true);
     }
-
     private void Update() 
     {
         if(waveUITimer > 0)
@@ -58,11 +66,12 @@ public class EnemySpawner : MonoBehaviour
         timeRemaining = startTimeRemaining;
     }
 
+   
     public WaveConfigSO GetCurrentWave()
     {
         return currentWave;
     }
-
+    
     IEnumerator SpawnEnemyWaves()
     {
         do

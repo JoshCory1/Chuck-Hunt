@@ -16,6 +16,7 @@ public class WaveConfigSO : ScriptableObject
     [SerializeField] float spawnTimeVeriance = 1f;
     [SerializeField] float minimumSpawnTime = 0.2f;
     float timeBetweenEnemySpawns = 1.5f;
+    bool destroyAllEnemys = false;
     void Start()
     {
         timeBetweenEnemySpawns = startTimeBetweenEnemySpawns;
@@ -57,5 +58,12 @@ public class WaveConfigSO : ScriptableObject
         return Mathf.Clamp(spawnTime, minimumSpawnTime, float.MaxValue);
     }
 
-    
+    public void SetDestroyAllEnemys(bool flag)
+        {
+          destroyAllEnemys = flag;
+        }
+    public bool GetDestroyAllEnemeys()
+    {
+        return destroyAllEnemys;
+    }
 }
